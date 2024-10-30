@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleventy with Preact and Vite</title>
+</head>
+<body>
+
+  <h1>Eleventy loading Vite Output</h1>
+
+  <!-- This is where the Preact component will render -->
+  <div id="app" style="height: 400px"></div>
+  <script>
+  </script>
+  <!-- Include the built JS file from Vite -->
+  <script type="module" src="{{ config.vite.manifest['vite/src/index.ts'].file }}"></script>
+
+</body>
+</html>
